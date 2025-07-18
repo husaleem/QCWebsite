@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+  Quantum Care Essentials Gradient Theme
+
+  Colors:
+  - Deep Blue:   #044bac
+  - Sky Blue:    #50ade5
+  - Ocean Blue:  #3c9cd3
+  - Vivid Green: #83cb2c
+  - Lime Green:  #c4fb74
+
+  Gradient Pattern:
+  linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74)
+
+  Reusable Class:
+  .qce-gradient {
+    background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+  }
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | QCE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+            color: white;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+         
+        .qce-gradient {
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-blue-800 text-white py-2 px-4 text-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                180 Tices Lane, Suite 104-A, East Brunswick NJ 08816
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="tel:7328531940" class="hover:text-blue-200 transition-smooth"><i class="fas fa-phone-alt mr-1"></i> (732)-853-1940</a>
+                <a href="mailto:support@qcessentials.com" class="hover:text-blue-200 transition-smooth"><i class="fas fa-envelope mr-1"></i> support@qcessentials.com</a>
+            </div>
+        </div>
+    </div>
+
+ <!-- Navigation -->
+    <nav class="qce-gradient text-white sticky top-0 z-50 shadow-md h-16">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center h-full">
+
+            <div class="flex items-center">
+            <div class="flex items-center pr-2">
+                <div class="relative h-[80px] w-auto -my-4">
+                <img src="images/QuantumLogo.png"
+                    alt="QCE Logo"
+                    class="h-full w-auto object-contain">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="text-2xl font-bold">QCE</a>
+                <a href="index.html" class="text-sm font-medium">Quantum Care Essentials</a>
+            </div>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Home</a>
+                <a href="products.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Products</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">
+                        About Us
+                    </a>
+
+                    <div class="absolute top-full left-0 mt-0 w-40 bg-white text-blue-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                        <a href="about.html#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+                        <a href="about.html#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+<!-- About Us Section -->
+<section class="py-20 bg-white fade-up">
+  <div class="container mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center gap-10">
+    
+    <!-- Text Section -->
+    <div class="md:w-1/2 text-left">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-6">ABOUT US</h2>
+      <p class="text-xl text-gray-700 leading-relaxed mb-4">
+        <strong>Quantum Care Essentials</strong> stands as your premier destination for high-caliber durable medical equipment (DME) and unparalleled service within the healthcare sector. With a steadfast commitment to customer satisfaction, we strive to deliver innovative and pragmatic solutions tailored to your needs.
+      </p>
+      <p class="text-xl text-gray-700 leading-relaxed mb-4">
+        Our ethos revolves around three pillars: competitive pricing, exemplary service, and unwavering dedication to quality care. We pride ourselves on offering a vast array of top-tier brands — from mobility aids to respiratory and rehabilitation equipment — ensuring reliability and ease for every patient.
+      </p>
+      <p class="text-xl text-gray-700 leading-relaxed">
+        What sets us apart is our expert team’s compassion and commitment to guiding you every step of the way, from product selection to aftercare support.
+      </p>
+    </div>
+
+    <!-- Slideshow Section -->
+    <div class="w-full md:w-1/2 relative overflow-hidden rounded-lg shadow-lg h-[200px] md:h-[300px] ml-0 md:ml-8">
+      <div id="slideshow" class="absolute w-full h-full">
+        <img src="images/glucose1.jpg" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-100">
+        <img src="images/glucose2.jpg" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+        <img src="images/brace1.avif" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+        <img src="images/anantpic1.avif" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+        <img src="images/anantpic2.avif" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+        <img src="images/anantpic3.avif" class="w-full h-full object-cover absolute transition-opacity duration-1000 opacity-0">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="bg-gray-100 py-20 fade-up">
+    <div class="container mx-auto px-6 md:px-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-800 mb-12">Frequently Asked Questions</h2>
+      <div class="space-y-6">
+        <!-- Repeatable FAQ item -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            What is DME?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+           Durable Medical Equipment (DME) encompasses a range of devices that enhance quality of life for individuals dealing with various health conditions. Our specialty lies in innovative DME solutions such as continuous glucose monitors (CGM), UV wands, and TENS units,and braces which offer compelling alternatives to traditional treatments. Unlike ongoing medication expenses or the risks associated with surgeries and addictive prescriptions, DME typically involves a one-time cost. Moreover, it sidesteps potential harmful side effects, offering a painless avenue to manage discomfort and enhance well-being.
+DME serves as a vital support system beyond the confines of hospitals, catering to both short-term and chronic conditions. By providing additional care and assistance, it empowers individuals to lead fulfilling lives while managing their health effectively.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            Who pays for my medical equipment?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+           Once we've confirmed your insurance details and obtained necessary documentation about you,
+
+ Medicare will handle the claim process with your insurance provider. For Medicare recipients, approved claims typically cover 80% of the product cost, after any deductible. If you have secondary coverage, the remaining 20% may be covered by them. However, you're ultimately responsible for this portion.
+Insurance plans differ based on individual coverage, so we advise reaching out to us before placing an order. Private insurance benefits vary widely and are tailored to each plan. Reimbursement amounts hinge on program specifics, deductibles, and eligibility criteria.
+          </div>
+        </div>
+
+        <!-- Continue duplicating structure for each question -->
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            When I give my health information what happens?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+            Rest assured that your personal information is handled with the utmost confidentiality at Quantum Care Essentials. We are committed to safeguarding your privacy and do not share any information with third parties. Your data is exclusively used, with your explicit consent, to verify if your insurance coverage qualifies you for the DME product you're interested in.
+We prioritise your privacy and adhere to strict protocols to ensure that your information remains secure throughout the process. At QCE, transparency and trust are core values, and we are dedicated to providing you with peace of mind as you explore your healthcare options.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            How long does it take to get my equipment?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+            Once we receive all necessary paperwork from your doctor and verify your insurance coverage, most orders are processed and shipped within 5–7 business days. We'll keep you updated every step of the way — and if anything is missing, we’ll follow up with your provider directly to avoid delays.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            Why Patients Prefer Quantum Care Essentials
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+            Patients prefer Quantum Care Essentials because we make the process of getting medical equipment simple, fast, and stress-free. From the moment you contact us, we take care of everything — including verifying your insurance, working directly with your doctor, and handling all necessary paperwork. Most equipment ships within 5 to 7 business days, with no cost to you if you're covered by Medicare or private insurance. Our team is friendly, knowledgeable, and always ready to answer your questions. We value your privacy and strictly follow HIPAA guidelines to keep your personal health information safe. With clear communication, reliable service, and a patient-first approach, Quantum Care Essentials is trusted by patients who want peace of mind and professional care every step of the way.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            What If I Already Receive DME from Another Provider?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+            If you’ve already received medical equipment from another provider, you may still qualify for a replacement, but it depends on a few key factors. Medicare typically only covers one item per category (like a back brace, CGM, or TENS unit) every five years, unless the device is lost, stolen, damaged beyond repair, or your doctor provides medical justification for a new one. If you're unsure when you last received the equipment, we can help check your Medicare records and contact your previous supplier if needed. If you're dissatisfied with your current provider, you’re allowed to switch. Quantum Care Essentials can assist with transferring care and working with your doctor to see if you qualify for a replacement. And if you already paid out-of-pocket for a device, there still may be options for future coverage based on medical necessity. Contact us to explore your eligibility.
+          </div>
+        </div>
+
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <button class="w-full px-6 py-4 text-left font-semibold text-blue-800 flex justify-between items-center focus:outline-none" onclick="toggleFAQ(this)">
+            Why should I choose Quantum Care Essentials?
+            <i class="fas fa-chevron-down faq-arrow"></i>
+          </button>
+          <div class="hidden px-6 pb-4 text-gray-700">
+            We make getting your medical equipment easy and worry-free by handling insurance, doctor communication, and fast delivery—all while protecting your privacy and providing friendly support.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+       <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QCE</h3>
+                    <p class="text-gray-400 mb-4">Quantum Care Essentials - Your premier destination for high-caliber durable medical equipment.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/qcessentials/?igsh=MWRlOXJvbnBxNnJmYQ%3D%3D#" class="text-gray-400 hover:text-white transition-smooth"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hours</h3>
+                    <ul class=" text-gray-400 transition-smooth">
+                          <li>Weekdays:</li>
+                          <li>10AM - 4PM</li>
+                          <br>
+                          <li>Weekends:</li>
+                          <li>Closed</li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">180 Tices Lane, Suite 104-A<br>East Brunswick NJ 08816</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <a href="tel:7328531940" class="text-gray-400">(732)-853-1940</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <a href="mailto:support@qcessentials.com" class="text-gray-400">support@qcessentials.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 Quantum Care Essentials. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+            mobileMenu.innerHTML =  `
+                <button class="absolute top-4 right-4 text-2xl text-gray-800">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="index.html" class="text-xl font-medium hover:text-blue-600">Home</a>
+                    <a href="products.html" class="text-xl font-medium hover:text-blue-600">Products</a>
+
+                    <!-- Mobile Dropdown with simple nesting -->
+                    <div>
+                    <a href="about.html" class="text-xl font-medium hover:text-blue-600 block">About Us</a>
+                    <div class="mt-2 space-y-2">
+                        <a href="about.html" class="block text-base text-gray-600 hover:text-blue-600">› About</a>
+                        <a href="about.html" class="block text-base text-gray-600 hover:text-blue-600">› FAQ</a>
+                    </div>
+                    </div>
+
+                    <a href="contact.html" class="text-xl font-medium hover:text-blue-600">Contact</a>
+                </div>
+                `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    <!-- Newsletter Modal -->
+<div id="newsletterModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full relative p-6 md:flex">
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white bg-blue-700 rounded-full w-6 h-6 flex items-center justify-center">
+      &times;
+    </button>
+
+    <!-- Text Content -->
+    <div class="md:w-2/3">
+      <h2 class="text-2xl font-bold mb-4">JOIN OUR LIST</h2>
+      <p class="text-gray-700 mb-6">to get news and alerts of promotions and more!</p>
+
+      <form onsubmit="submitNewsletter(event)" class="flex flex-col sm:flex-row items-center gap-4">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required class="w-full sm:w-auto flex-grow border border-gray-300 px-4 py-2 rounded">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">SUBMIT</button>
+      </form>
+
+      <label class="inline-flex items-center mt-4">
+        <input type="checkbox" id="dontShowAgain" class="mr-2">
+        <span class="text-sm text-gray-600">Don't show this popup again</span>
+      </label>
+    </div>
+
+    <!-- Image -->
+    <div class="hidden md:block md:w-1/3">
+      <img src="https://i.imgur.com/WvS0GqV.png" alt="Chair" class="w-full h-auto rounded-md">
+    </div>
+  </div>
+</div>
+
+<script>
+  // Show modal only once
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("qceNewsletterDismissed")) {
+      setTimeout(() => {
+        document.getElementById("newsletterModal").classList.remove("hidden");
+      }, 800); // 800ms delay
+    }
+  });
+
+  function closeModal() {
+    if (document.getElementById("dontShowAgain").checked) {
+      localStorage.setItem("qceNewsletterDismissed", "true");
+    }
+    document.getElementById("newsletterModal").classList.add("hidden");
+  }
+
+  function submitNewsletter(event) {
+    event.preventDefault();
+    const email = document.getElementById("newsletterEmail").value;
+    alert("Thank you for subscribing, " + email + "!");
+    closeModal();
+  }
+</script>
+ <script>
+    function toggleFAQ(btn) {
+      const content = btn.nextElementSibling;
+      const arrow = btn.querySelector('.faq-arrow');
+      const parent = btn.parentElement;
+      const isOpen = content.classList.contains('hidden');
+
+      content.classList.toggle('hidden');
+      parent.classList.toggle('faq-open', isOpen);
+    }
+
+    // Page load animation
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.fade-up').forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.2}s`;
+        el.classList.add('animate-fadeUp');
+      });
+    });
+  </script>
+  <script>
+  const slides = document.querySelectorAll("#slideshow img");
+  let currentSlide = 0;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove("opacity-100");
+    slides[currentSlide].classList.add("opacity-0");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.remove("opacity-0");
+    slides[currentSlide].classList.add("opacity-100");
+  }, 4000); // Change image every 4 seconds
+</script>
+
+</body>
+</html>

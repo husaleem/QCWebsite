@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+  Quantum Care Essentials Gradient Theme
+
+  Colors:
+  - Deep Blue:   #044bac
+  - Sky Blue:    #50ade5
+  - Ocean Blue:  #3c9cd3
+  - Vivid Green: #83cb2c
+  - Lime Green:  #c4fb74
+
+  Gradient Pattern:
+  linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74)
+
+  Reusable Class:
+  .qce-gradient {
+    background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+  }
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product | QCE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+            color: white;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+         
+        .qce-gradient {
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+        }
+        .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+        }
+    </style>
+</head>
+
+
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-blue-800 text-white py-2 px-4 text-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                180 Tices Lane, Suite 104-A, East Brunswick NJ 08816
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="tel:7328531940" class="hover:text-blue-200 transition-smooth"><i class="fas fa-phone-alt mr-1"></i> (732)-853-1940</a>
+                <a href="mailto:support@qcessentials.com" class="hover:text-blue-200 transition-smooth"><i class="fas fa-envelope mr-1"></i> support@qcessentials.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="qce-gradient text-white sticky top-0 z-50 shadow-md h-16">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center h-full">
+
+            <div class="flex items-center">
+            <div class="flex items-center pr-2">
+                <div class="relative h-[80px] w-auto -my-4">
+                <img src="images/QuantumLogo.png"
+                    alt="QCE Logo"
+                    class="h-full w-auto object-contain">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="text-2xl font-bold">QCE</a>
+                <a href="index.html" class="text-sm font-medium">Quantum Care Essentials</a>
+            </div>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Home</a>
+                <a href="products.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Products</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">
+                        About Us
+                    </a>
+
+                    <div class="absolute top-full left-0 mt-0 w-40 bg-white text-blue-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                        <a href="about.html#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+                        <a href="about.html#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Products Page Section -->
+    <section id="productSection" class="py-20 px-4 container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 fade-in">Our Products</h2>
+
+        <!-- Search Bar -->
+        <div class="flex justify-end mb-8">
+            <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products..."
+            class="border border-gray-300 px-4 py-2 rounded-lg shadow-sm w-full max-w-sm"
+            />
+        </div>
+
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+            <!-- TENS Unit -->
+            <a href="products/tens-unit.html" class="bg-white rounded-xl shadow-md overflow-hidden fade-in p-6 text-center block transition-smooth hover:shadow-lg">
+            <img src="https://static.wixstatic.com/media/d80522_cbce37601c4c4a2e826c50318ee8b4f1~mv2.webp/v1/fill/w_362,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ten.webp" class="w-full h-48 object-contain mb-4" alt="TENS Unit" />
+            <h3 class="text-xl font-bold mb-2">TENS Unit</h3>
+            <p class="text-gray-600 mb-4">TENS (Transcutaneous Electrical Nerve Stimulation) units are portable, non-invasive devices designed to provide relief from acute and chronic pain.</p>
+            </a>
+
+            <!-- CGM -->
+            <a href="products/glucose-monitor.html" class="bg-white rounded-xl shadow-md overflow-hidden fade-in p-6 text-center block transition-smooth hover:shadow-lg">
+            <img src="https://static.wixstatic.com/media/d80522_ef2e8e959fa4469a849769eb776be751~mv2.png/v1/fill/w_435,h_386,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LIBRE.png" class="w-full h-48 object-contain mb-4" alt="Continuous Glucose Monitor" />
+            <h3 class="text-xl font-bold mb-2">Continuous Glucose Monitor</h3>
+            <p class="text-gray-600 mb-4">Empower your diabetes management journey with Continuous Glucose Monitoring (CGM). Accurate, reliable, and convenient solutions available here.</p>
+            </a>
+
+            <!-- UV Phototherapy -->
+            <a href="products/uv-phototherapy.html" class="bg-white rounded-xl shadow-md overflow-hidden fade-in p-6 text-center block transition-smooth hover:shadow-lg">
+            <img src="https://static.wixstatic.com/media/d80522_c280d59cae8242dcb1218b471559e83f~mv2.jpeg/v1/fill/w_384,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/wand.jpeg" class="w-full h-48 object-contain mb-4" alt="UV Band Phototherapy Wand" />
+            <h3 class="text-xl font-bold mb-2">UV Band Phototherapy Wand</h3>
+            <p class="text-gray-600 mb-4">Safe and reliable treatment for skin conditions like psoriasis and eczema — even for pregnant women and children.</p>
+            </a>
+
+            <!-- Orthopedic Braces -->
+            <a href="products/orthopedic-braces.html" class="bg-white rounded-xl shadow-md overflow-hidden fade-in p-6 text-center block transition-smooth hover:shadow-lg">
+            <img src="images/brace1.avif" class="w-full h-48 object-cover mb-4" alt="Orthopedic Braces" />
+            <h3 class="text-xl font-bold mb-2">Orthopedic Braces</h3>
+            <p class="text-gray-600 mb-4">Stabilize joints and relieve pain from back, knee, or wrist issues. Medicare-covered solutions available to support recovery and comfort.</p>
+            </a>
+        </div>
+
+        <!-- Call Us Link -->
+        <div class="text-center mt-8">
+            <a href="tel:7328531940" class="text-blue-800 font-semibold hover:underline">
+            For more information, call us
+            </a>
+        </div>
+    </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="fixed bottom-5 right-5 z-50 p-3 rounded-full back-to-top shadow-lg hover:scale-105 transition duration-300">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QCE</h3>
+                    <p class="text-gray-400 mb-4">Quantum Care Essentials - Your premier destination for high-caliber durable medical equipment.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/qcessentials/?igsh=MWRlOXJvbnBxNnJmYQ%3D%3D#" class="text-gray-400 hover:text-white transition-smooth"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="about.html#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hours</h3>
+                    <ul class=" text-gray-400  transition-smooth">
+                          <li>Weekdays:</li>
+                          <li>10AM - 4PM</li>
+                          <br>
+                          <li>Weekends:</li>
+                          <li>Closed</li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">180 Tices Lane, Suite 104-A<br>East Brunswick NJ 08816</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <a href="tel:7328531940" class="text-gray-400">(732)-853-1940</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <a href="mailto:support@qcessentials.com" class="text-gray-400">support@qcessentials.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 Quantum Care Essentials. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script>
+        // Simple mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+            mobileMenu.innerHTML =  `
+                <button class="absolute top-4 right-4 text-2xl text-gray-800">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="index.html" class="text-xl font-medium hover:text-blue-600">Home</a>
+                    <a href="products.html" class="text-xl font-medium hover:text-blue-600">Products</a>
+
+                    <!-- Mobile Dropdown with simple nesting -->
+                    <div>
+                    <a href="about.html" class="text-xl font-medium hover:text-blue-600 block">About Us</a>
+                    <div class="mt-2 space-y-2">
+                        <a href="about.html#about" class="block text-base text-gray-600 hover:text-blue-600">› About</a>
+                        <a href="about.html#faq" class="block text-base text-gray-600 hover:text-blue-600">› FAQ</a>
+                    </div>
+                    </div>
+
+                    <a href="contact.html" class="text-xl font-medium hover:text-blue-600">Contact</a>
+                </div>
+                `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    
+        <!-- Newsletter Modal -->
+    <div id="newsletterModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full relative p-6 md:flex">
+        <!-- Close Button -->
+        <button onclick="closeModal()" class="absolute top-2 right-2 text-white bg-blue-700 rounded-full w-6 h-6 flex items-center justify-center">
+        &times;
+        </button>
+
+        <!-- Text Content -->
+        <div class="md:w-2/3">
+        <h2 class="text-2xl font-bold mb-4">JOIN OUR LIST</h2>
+        <p class="text-gray-700 mb-6">to get news and alerts of promotions and more!</p>
+
+        <form onsubmit="submitNewsletter(event)" class="flex flex-col sm:flex-row items-center gap-4">
+            <input type="email" id="newsletterEmail" placeholder="Your email address" required class="w-full sm:w-auto flex-grow border border-gray-300 px-4 py-2 rounded">
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">SUBMIT</button>
+        </form>
+
+        <label class="inline-flex items-center mt-4">
+            <input type="checkbox" id="dontShowAgain" class="mr-2">
+            <span class="text-sm text-gray-600">Don't show this popup again</span>
+        </label>
+        </div>
+
+        <!-- Image -->
+        <div class="hidden md:block md:w-1/3">
+        <img src="https://i.imgur.com/WvS0GqV.png" alt="Chair" class="w-full h-auto rounded-md">
+        </div>
+    </div>
+    </div>
+
+    <script>
+    // Show modal only once
+    document.addEventListener("DOMContentLoaded", () => {
+        if (!localStorage.getItem("qceNewsletterDismissed")) {
+        setTimeout(() => {
+            document.getElementById("newsletterModal").classList.remove("hidden");
+        }, 800); // 800ms delay
+        }
+    });
+
+    function closeModal() {
+        if (document.getElementById("dontShowAgain").checked) {
+        localStorage.setItem("qceNewsletterDismissed", "true");
+        }
+        document.getElementById("newsletterModal").classList.add("hidden");
+    }
+
+    function submitNewsletter(event) {
+        event.preventDefault();
+        const email = document.getElementById("newsletterEmail").value;
+        alert("Thank you for subscribing, " + email + "!");
+        closeModal();
+    }
+
+    </script>
+    
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+        const fadeElements = document.querySelectorAll(".fade-in");
+        fadeElements.forEach((el, i) => {
+            setTimeout(() => el.classList.add("show"), i * 150);
+        });
+        });
+
+        // Back to Top
+        document.getElementById("backToTop").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
+
+    <script>
+        document.getElementById("productSearch").addEventListener("input", function () {
+            const query = this.value.toLowerCase();
+            const cards = document.querySelectorAll("#productGrid > a");
+            cards.forEach(card => {
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            const desc = card.querySelector("p").textContent.toLowerCase();
+            card.style.display = (title.includes(query) || desc.includes(query)) ? "block" : "none";
+            });
+        });
+</script>
+
+</body>
+</html>

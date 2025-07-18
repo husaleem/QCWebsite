@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+  Quantum Care Essentials Gradient Theme
+
+  Colors:
+  - Deep Blue:   #044bac
+  - Sky Blue:    #50ade5
+  - Ocean Blue:  #3c9cd3
+  - Vivid Green: #83cb2c
+  - Lime Green:  #c4fb74
+
+  Gradient Pattern:
+  linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74)
+
+  Reusable Class:
+  .qce-gradient {
+    background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+  }
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | QCE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+        }
+        .feature-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+            color: white;
+            font-size: 24px;
+            margin-bottom: 1rem;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .transition-smooth {
+            transition: all 0.3s ease;
+        }
+         
+        .qce-gradient {
+            background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+        }
+
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Top Bar -->
+    <div class="bg-blue-800 text-white py-2 px-4 text-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                180 Tices Lane, Suite 104-A, East Brunswick NJ 08816
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="tel:7328531940" class="hover:text-blue-200 transition-smooth"><i class="fas fa-phone-alt mr-1"></i> (732)-853-1940</a>
+                <a href="mailto:support@qcessentials.com" class="hover:text-blue-200 transition-smooth"><i class="fas fa-envelope mr-1"></i> support@qcessentials.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="qce-gradient text-white sticky top-0 z-50 shadow-md h-16">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center h-full">
+
+            <div class="flex items-center">
+            <div class="flex items-center pr-2">
+                <div class="relative h-[80px] w-auto -my-4">
+                <img src="images/QuantumLogo.png"
+                    alt="QCE Logo"
+                    class="h-full w-auto object-contain">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="text-2xl font-bold">QCE</a>
+                <a href="index.html" class="text-sm font-medium">Quantum Care Essentials</a>
+            </div>
+            </div>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Home</a>
+                <a href="products.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Products</a>
+
+                <div class="relative group">
+                    <a href="about.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">
+                        About Us
+                    </a>
+
+                    <div class="absolute top-full left-0 mt-0 w-40 bg-white text-blue-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+                        <a href="about.html#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+                        <a href="about.html#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="font-medium hover:text-blue-100 transition-smooth inline-block py-4">Contact</a>
+            </div>
+
+            <div class="md:hidden">
+                <button class="text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+ <section class="hero-gradient py-16 md:py-20 relative overflow-hidden" id="home">
+  <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Quantum Care Essentials</h1>
+      <h3 class="text-3xl md:text-3xl font-bold text-gray-900 mb-4">
+        Premium Medical Equipment for Your Health Needs
+      </h3>
+      <p class="text-lg text-gray-600 mb-8">
+        High-quality durable medical equipment with exceptional service and competitive pricing.
+      </p>
+      <div class="flex space-x-4">
+        <a href="products.html" class="bg-blue-800 hover:[background-color:#3c9cd3] text-white px-6 py-3 rounded-lg font-medium transition-smooth">
+          Shop Products
+        </a>
+        <a href="tel:7328531940" class="border border-blue-800 text-blue-800 hover:bg-blue-200 px-6 py-3 rounded-lg font-medium transition-smooth">
+          Call Us
+        </a>
+      </div>
+    </div>
+
+  <div class="md:w-1/2 flex justify-center relative h-[325px] w-[362px] overflow-visible">
+  <img src="images/QuantumLogo.png" 
+       alt="QCE Logo"
+       class="absolute -top-6 scale-[1.25] object-contain h-[325px] w-[362px] pointer-events-none">
+</div>
+  </div>
+
+  <!-- ✅ Bottom Right Credential Logo -->
+  <div class="absolute bottom-4 right-4 w-[120px]">
+    <img src="images/QCCredential.png" alt="Credential Logo" class="w-full h-auto object-contain">
+  </div>
+</section>
+
+  
+
+    <!-- About Us -->
+    <section class="py-16 bg-gray-50" id="faq">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">About Quantum Care Essentials</h2>
+                <div class="w-20 h-1 bg-blue-800 mx-auto"></div>
+            </div>
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <p class="text-lg text-gray-600">Quantum Care Essentials stands as your premier destination for high-caliber durable medical equipment (DME) and unparalleled service within the healthcare sector. With a steadfast commitment to customer satisfaction, we strive to deliver innovative and pragmatic solutions tailored to your needs.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Wide Selection</h3>
+                    <p class="text-gray-600">Our comprehensive selection encompasses everything from mobility aids to respiratory equipment.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitive Pricing</h3>
+                    <p class="text-gray-600">We offer the best prices without compromising on quality or service.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fast Shipping</h3>
+                    <p class="text-gray-600">Get your medical equipment delivered quickly to your doorstep.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Quality Guaranteed</h3>
+                    <p class="text-gray-600">We only carry top-tier brands that meet our strict quality standards.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Reliable Support</h3>
+                    <p class="text-gray-600">Our knowledgeable team provides guidance through every step of your journey.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md text-center transition-smooth hover:shadow-lg">
+                    <div class="feature-icon mx-auto">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Compassionate Care</h3>
+                    <p class="text-gray-600">We combine proficiency with empathy to set industry standards.</p>
+                </div>
+            </div>
+                        <div class="text-center mt-12">
+                <a href="about.html" class="inline-block bg-blue-800 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-medium transition-smooth">View About Us</a>
+            </div>
+        </div>
+    </section>
+
+ <!-- Products -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Products</h2>
+                <div class="w-20 h-1 bg-blue-800 mx-auto"></div>
+                <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">We offer a wide range of durable medical equipment to meet your needs. From glucose monitors to TENS Units, we have everything you need to stay healthy and comfortable.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="product-card bg-white rounded-xl shadow-md overflow-hidden transition-smooth">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img src="https://static.wixstatic.com/media/d80522_ef2e8e959fa4469a849769eb776be751~mv2.png/v1/fill/w_435,h_386,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/LIBRE.png" 
+                             alt="LIBRE" 
+                             class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">LIBRE Glucose Monitor</h3>
+                        <p class="text-gray-600 mb-4">Advanced continuous glucose monitoring system for diabetes management.</p>
+                        <a href="#" class="text-blue-800 font-medium hover:text-blue-500 transition-smooth">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="product-card bg-white rounded-xl shadow-md overflow-hidden transition-smooth">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img src="https://static.wixstatic.com/media/d80522_cbce37601c4c4a2e826c50318ee8b4f1~mv2.webp/v1/fill/w_362,h_325,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ten.webp" 
+                             alt="TENS Unit" 
+                             class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TENS 7000 Unit</h3>
+                        <p class="text-gray-600 mb-4">Effective pain relief through transcutaneous electrical nerve stimulation.</p>
+                        <a href="#" class="text-blue-800 font-medium hover:text-blue-500 transition-smooth">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <div class="product-card bg-white rounded-xl shadow-md overflow-hidden transition-smooth">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img src="https://static.wixstatic.com/media/d80522_c280d59cae8242dcb1218b471559e83f~mv2.jpeg/v1/fill/w_384,h_255,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/wand.jpeg" 
+                             alt="Massage Wand" 
+                             class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Therapeutic Massage Wand</h3>
+                        <p class="text-gray-600 mb-4">Professional-grade massage tool for pain relief and muscle relaxation.</p>
+                        <a href="#" class="text-blue-800 font-medium hover:text-blue-500 transition-smooth">Learn More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                 <div class="product-card bg-white rounded-xl shadow-md overflow-hidden transition-smooth">
+                    <div class="h-64 bg-gray-100 flex items-center justify-center p-4">
+                        <img src="images/brace1.avif" 
+                            alt="Back & Joint Braces" 
+                            class="max-h-full max-w-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Back & Joint Braces</h3>
+                        <p class="text-gray-600 mb-4">
+                        Find relief from back, joint, and knee pain with Medicare-covered braces designed to reduce strain and support recovery. Check if you qualify today.
+                        </p>
+                        <a href="contact.html" class="text-blue-800 font-medium hover:text-blue-500 transition-smooth">
+                        Learn More <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="products.html" class="inline-block bg-blue-800 hover:bg-blue-500 text-white px-8 py-3 rounded-lg font-medium transition-smooth">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+<!-- CTA with SVG Curves -->
+<div class="relative overflow-hidden">
+  <svg class="absolute top-0 left-0 w-full h-24 z-20" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="#c4fb74" d="M0,0 C480,100 960,0 1440,100 L1440,0 L0,0 Z"></path> <!-- Sky Blue for big curve -->
+    <path fill="#50ade5" d="M0,0 C480,60 960,20 1440,80 L1440,0 L0,0 Z" opacity="0.8"></path> <!-- Vivid Green for small curve -->
+  </svg>
+
+  <section class="py-20 bg-blue-800 text-white relative z-10">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6">Ready to Find Your Medical Equipment Solution?</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Our team is here to help you find the perfect products for your health needs.</p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="contact.html" class="bg-white text-blue-800 hover:bg-gray-300 px-8 py-3 rounded-lg font-medium transition-smooth">Contact Us</a>
+        <a href="tel:7328531940" class="border border-white hover:bg-blue-700 px-8 py-3 rounded-lg font-medium transition-smooth">Call Now</a>
+      </div>
+    </div>
+  </section>
+
+  <svg class="absolute bottom-0 left-0 w-full h-24 z-20" viewBox="0 0 1440 100" preserveAspectRatio="none">
+    <path fill="#3c9cd3" d="M0,0 C480,60 960,20 1440,80 L1440,100 L0,100 Z" opacity="1"></path> <!-- Lime Green for small curve -->
+    <path fill="#c4fb74" d="M1,1 C480,100 960,0 1440,100 L1440,100 L0,100 Z"></path> <!-- Sky Blue for big curve -->
+    
+  </svg>
+</div>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Visit Us</h2>
+        <p class="text-gray-600">180 Tices Lane, Suite 104-A, East Brunswick NJ 08816</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <!-- Google Map Embed -->
+        <div class="w-full h-[400px] shadow-lg rounded-lg overflow-hidden ">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3035.9217318304277!2d-74.42623782359631!3d40.45486925331656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c7d998ff5753%3A0xeda4727ce260e5cd!2sSam%20Income%20Tax%2C%20LLC%20CPA!5e0!3m2!1sen!2sus!4v1752120670896!5m2!1sen!2sus"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <!-- Business Hours -->
+        <div class="p-8 border border-gray-300 rounded-2xl shadow-lg bg-white text-center md:text-center">
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Opening Hours</h3>
+            <ul class="text-gray-600 space-y-2">
+            <li>Monday: 10:00 AM – 4:00 PM</li>
+            <li>Tuesday: 10:00 AM – 4:00 PM</li>
+            <li>Wednesday: 10:00 AM – 4:00 PM</li>
+            <li>Thursday: 10:00 AM – 4:00 PM</li>
+            <li>Friday: 10:00 AM – 4:00 PM</li>
+            <li>Saturday: Closed</li>
+            <li>Sunday: Closed</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QCE</h3>
+                    <p class="text-gray-400 mb-4">Quantum Care Essentials - Your premier destination for high-caliber durable medical equipment.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/qcessentials/?igsh=MWRlOXJvbnBxNnJmYQ%3D%3D#" class="text-gray-400 hover:text-white transition-smooth"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="about.html#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hours</h3>
+                    <ul class=" text-gray-400 transition-smooth">
+                          <li>Weekdays:</li>
+                          <li>10AM - 4PM</li>
+                          <br>
+                          <li>Weekends:</li>
+                          <li>Closed</li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">180 Tices Lane, Suite 104-A<br>East Brunswick NJ 08816</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <a href="tel:7328531940" class="text-gray-400">(732)-853-1940</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <a href="mailto:support@qcessentials.com" class="text-gray-400">support@qcessentials.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 Quantum Care Essentials. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const mobileMenu = document.createElement('div');
+            mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+            mobileMenu.innerHTML =  `
+                <button class="absolute top-4 right-4 text-2xl text-gray-800">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="flex flex-col space-y-6 text-center">
+                    <a href="index.html" class="text-xl font-medium hover:text-blue-600">Home</a>
+                    <a href="products.html" class="text-xl font-medium hover:text-blue-600">Products</a>
+
+                    <!-- Mobile Dropdown with simple nesting -->
+                    <div>
+                    <a href="about.html" class="text-xl font-medium hover:text-blue-600 block">About Us</a>
+                    <div class="mt-2 space-y-2">
+                        <a href="about.html#about" class="block text-base text-gray-600 hover:text-blue-600">› About</a>
+                        <a href="about.html#faq" class="block text-base text-gray-600 hover:text-blue-600">› FAQ</a>
+                    </div>
+                    </div>
+
+                    <a href="contact.html" class="text-xl font-medium hover:text-blue-600">Contact</a>
+                </div>
+                `;
+            document.body.appendChild(mobileMenu);
+
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.remove('hidden');
+            });
+
+            mobileMenu.querySelector('button').addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+    <!-- Newsletter Modal -->
+<div id="newsletterModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full relative p-6 md:flex">
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-white bg-blue-700 rounded-full w-6 h-6 flex items-center justify-center">
+      &times;
+    </button>
+
+    <!-- Text Content -->
+    <div class="md:w-2/3">
+      <h2 class="text-2xl font-bold mb-4">JOIN OUR LIST</h2>
+      <p class="text-gray-700 mb-6">to get news and alerts of promotions and more!</p>
+
+      <form onsubmit="submitNewsletter(event)" class="flex flex-col sm:flex-row items-center gap-4">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" required class="w-full sm:w-auto flex-grow border border-gray-300 px-4 py-2 rounded">
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">SUBMIT</button>
+      </form>
+
+      <label class="inline-flex items-center mt-4">
+        <input type="checkbox" id="dontShowAgain" class="mr-2">
+        <span class="text-sm text-gray-600">Don't show this popup again</span>
+      </label>
+    </div>
+
+    <!-- Image -->
+    <div class="hidden md:block md:w-1/3">
+      <img src="https://i.imgur.com/WvS0GqV.png" alt="Chair" class="w-full h-auto rounded-md">
+    </div>
+  </div>
+</div>
+
+<script>
+  // Show modal only once
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!localStorage.getItem("qceNewsletterDismissed")) {
+      setTimeout(() => {
+        document.getElementById("newsletterModal").classList.remove("hidden");
+      }, 800); // 800ms delay
+    }
+  });
+
+  function closeModal() {
+    if (document.getElementById("dontShowAgain").checked) {
+      localStorage.setItem("qceNewsletterDismissed", "true");
+    }
+    document.getElementById("newsletterModal").classList.add("hidden");
+  }
+
+  function submitNewsletter(event) {
+    event.preventDefault();
+    const email = document.getElementById("newsletterEmail").value;
+    alert("Thank you for subscribing, " + email + "!");
+    closeModal();
+  }
+  
+</script>
+
+</body>
+</html>

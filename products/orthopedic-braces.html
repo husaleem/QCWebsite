@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Orthopedic Braces | Quantum Care Essentials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <style>
+    .qce-gradient {
+      background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+    }
+    .transition-smooth {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+
+  <!-- Top Bar -->
+  <div class="bg-blue-800 text-white py-2 px-4 text-sm">
+    <div class="container mx-auto flex justify-between items-center">
+      <div><i class="fas fa-map-marker-alt mr-2"></i>180 Tices Lane, Suite 104-A, East Brunswick NJ 08816</div>
+      <div class="hidden md:flex space-x-4">
+        <a href="tel:7328531940" class="hover:text-blue-200 transition-smooth"><i class="fas fa-phone-alt mr-1"></i> (732)-853-1940</a>
+        <a href="mailto:support@qcessentials.com" class="hover:text-blue-200 transition-smooth"><i class="fas fa-envelope mr-1"></i> support@qcessentials.com</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Navigation -->
+    <nav class="qce-gradient text-white sticky top-0 z-50 shadow-md h-16">
+    <div class="container mx-auto px-4 py-1 flex justify-between items-center h-full">
+        <div class="flex items-center">
+        <div class="relative h-[80px] w-auto -my-4">
+            <img src="../images/QuantumLogo.png" alt="QCE Logo" class="h-full w-auto object-contain"/>
+        </div>
+        <div class="flex items-center space-x-2">
+            <a href="../index.html" class="text-2xl font-bold">QCE</a>
+            <a href="../index.html" class="text-sm font-medium">Quantum Care Essentials</a>
+        </div>
+        </div>
+
+        <div class="hidden md:flex space-x-8">
+        <a href="../index.html" class="font-medium hover:text-blue-100 transition-smooth py-4">Home</a>
+        <a href="../products.html" class="font-medium hover:text-blue-100 transition-smooth py-4">Products</a>
+
+        <!-- FIXED About Us Dropdown -->
+        <div class="relative group py-4">
+            <a href="../about.html" class="font-medium hover:text-blue-100 transition-smooth">About Us</a>
+            <div class="absolute top-full left-0 mt-0 w-40 bg-white text-blue-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-200 z-50">
+            <a href="../about.html#about" class="block px-4 py-2 hover:bg-gray-100">About</a>
+            <a href="../about.html#faq" class="block px-4 py-2 hover:bg-gray-100">FAQ</a>
+            </div>
+        </div>
+
+        <a href="../contact.html" class="font-medium hover:text-blue-100 transition-smooth py-4">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="md:hidden">
+        <button id="mobileMenuBtn" class="text-white"><i class="fas fa-bars text-2xl"></i></button>
+        </div>
+    </div>
+    </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
+    <button id="closeMobileMenu" class="absolute top-4 right-4 text-2xl text-gray-800"><i class="fas fa-times"></i></button>
+    <div class="flex flex-col space-y-6 text-center">
+      <a href="../index.html" class="text-xl font-medium hover:text-blue-600">Home</a>
+      <a href="../products.html" class="text-xl font-medium hover:text-blue-600">Products</a>
+      <div>
+        <a href="../about.html" class="text-xl font-medium hover:text-blue-600 block">About Us</a>
+        <div class="mt-2 space-y-2">
+          <a href="../about.html#about" class="block text-base text-gray-600 hover:text-blue-600">› About</a>
+          <a href="../about.html#faq" class="block text-base text-gray-600 hover:text-blue-600">› FAQ</a>
+        </div>
+      </div>
+      <a href="../contact.html" class="text-xl font-medium hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("mobileMenuBtn").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.remove("hidden");
+    });
+    document.getElementById("closeMobileMenu").addEventListener("click", () => {
+      document.getElementById("mobileMenu").classList.add("hidden");
+    });
+  </script>
+
+  <!-- Back Button -->
+  <div class="max-w-6xl mx-auto mt-6 px-4">
+    <a href="../products.html" class="inline-flex items-center text-blue-800 font-medium hover:text-blue-500 transition">
+      <i class="fas fa-arrow-left mr-2"></i> Back to Products
+    </a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6">
+    <h1 class="text-4xl font-bold mb-4">Orthopedic Braces</h1>
+    <p class="text-lg max-w-3xl mx-auto text-gray-700">
+      Find Relief from Back and Joint Pain — Covered by Medicare!
+    </p>
+  </section>
+
+  <!-- Info Section -->
+  <section class="py-12 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <img src="../images/brace1.avif" alt="Orthopedic Brace" class="w-full max-h-[400px] object-contain rounded-lg shadow-md">
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold mb-4">Back, Knee, and Joint Support</h2>
+        <p class="text-gray-700 mb-4">
+          Back, knee, joint, and wrist pain are extremely common and can interfere with daily life. Lower back pain especially can stem from poor posture, injuries, excess weight, or even sleeping in the wrong position.
+        </p>
+        <p class="text-gray-700 mb-4">
+          For chronic or severe cases, Medicare-covered back braces can provide real relief. These devices help stabilize the spine, reduce strain, and support healing from injury or surgery. You may qualify at no cost through your insurance—call us today to learn more.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRU-RANGE Section -->
+  <section class="py-16 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">TRU-RANGE KNEE</h2>
+      <p class="text-lg text-gray-700 mb-4">
+        Designed with multiple range-of-motion (ROM) settings, TRU-RANGE KNEE supports recovery from:
+      </p>
+      <ul class="list-disc list-inside text-left max-w-xl mx-auto text-gray-700 space-y-1">
+        <li>ACL and MCL injuries</li>
+        <li>Cartilage and meniscus tears</li>
+        <li>Patella and tibia/fibula fractures</li>
+        <li>Hyperextension and ligament derangements</li>
+        <li>Osteoarthritis and rheumatoid arthritis</li>
+        <li>Multiple sclerosis and sprains</li>
+        <li>Post-surgery rehab and knee rehabilitation</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="bg-blue-800 text-white py-16 text-center px-6">
+    <h2 class="text-3xl font-bold mb-4">Check Eligibility for Medicare-Covered Braces</h2>
+    <p class="text-lg mb-6 max-w-2xl mx-auto">Don't let joint pain limit your lifestyle. Contact us today to learn more about qualifying for orthopedic braces at no cost through Medicare.</p>
+    <a href="tel:7328531940" class="inline-block bg-white text-blue-800 font-semibold py-3 px-6 rounded hover:bg-gray-100 transition-smooth">
+      <i class="fas fa-phone-alt mr-2"></i> Call Now: (732)-853-1940
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8 mt-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div>
+          <h3 class="text-xl font-bold mb-4">QCE</h3>
+          <p class="text-gray-400 mb-4">Quantum Care Essentials - Your premier destination for high-caliber durable medical equipment.</p>
+          <div class="flex space-x-4">
+            <a href="https://www.instagram.com/qcessentials/" class="text-gray-400 hover:text-white transition-smooth"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="../index.html" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+            <li><a href="../products.html" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
+            <li><a href="../about.html" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
+            <li><a href="../contact.html" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+            <li><a href="../about.html#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Hours</h3>
+          <ul class="text-gray-400">
+            <li>Weekdays: 10AM - 4PM</li>
+            <li class="mt-2">Weekends: Closed</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-3">
+            <li class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i><span class="text-gray-400">180 Tices Lane, Suite 104-A<br/>East Brunswick NJ 08816</span></li>
+            <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-blue-400"></i><a href="tel:7328531940" class="text-gray-400">(732)-853-1940</a></li>
+            <li class="flex items-center"><i class="fas fa-envelope mr-3 text-blue-400"></i><a href="mailto:support@qcessentials.com" class="text-gray-400">support@qcessentials.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 mb-4 md:mb-0">© 2025 Quantum Care Essentials. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-white transition-smooth">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

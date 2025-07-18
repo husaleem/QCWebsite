@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- 
+  Quantum Care Essentials Gradient Theme
+
+  Colors:
+  - Deep Blue:   #044bac
+  - Sky Blue:    #50ade5
+  - Ocean Blue:  #3c9cd3
+  - Vivid Green: #83cb2c
+  - Lime Green:  #c4fb74
+
+  Gradient Pattern:
+  linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74)
+
+  Reusable Class:
+  .qce-gradient {
+    background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+  }
+-->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | QCE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    .hero-gradient {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e6f0ff 100%);
+    }
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+      color: white;
+      font-size: 24px;
+      margin-bottom: 1rem;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    .transition-smooth {
+      transition: all 0.3s ease;
+    }
+    .qce-gradient {
+      background: linear-gradient(to right, #044bac, #50ade5, #3c9cd3, #83cb2c, #c4fb74);
+    }
+    .background-logo {
+      background-image: url('images/QuantumLogo.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      opacity: 0.03;
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .page-wrapper {
+      position: relative;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+  <div class="background-logo"></div>
+
+  <div class="page-wrapper">
+    <!-- Paste your full page content here -->
+
+    <!-- Example: -->
+    <!-- Top bar, nav, contact section, footer, etc. -->
+
+    <!-- Top Bar -->
+    <div class="bg-blue-800 text-white py-2 px-4 text-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <i class="fas fa-map-marker-alt mr-2"></i>
+                180 Tices Lane, Suite 104-A, East Brunswick NJ 08816
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="tel:7328531940" class="hover:text-blue-200 transition-smooth"><i class="fas fa-phone-alt mr-1"></i> (732)-853-1940</a>
+                <a href="mailto:support@qcessentials.com" class="hover:text-blue-200 transition-smooth"><i class="fas fa-envelope mr-1"></i> support@qcessentials.com</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="qce-gradient text-white sticky top-0 z-50 shadow-md h-16">
+        <div class="container mx-auto px-4 py-1 flex justify-between items-center h-full">
+            
+            <!-- Left side: Logo + Brand Text -->
+            <div class="flex items-center">
+            <!-- Logo wrapper with fine-tuned positioning -->
+            <div class="flex items-center pr-2">
+                <div class="relative h-[80px] w-auto -my-4">
+                <img src="images/QuantumLogo.png" 
+                    alt="QCE Logo" 
+                    class="h-full w-auto object-contain">
+                </div>
+            </div>
+
+            <!-- Brand Name and Tagline -->
+            <div class="flex items-center space-x-2">
+                <a href="index.html" class="text-2xl font-bold">QCE</a>
+                <a href="index.html" class="text-sm font-medium">Quantum Care Essentials</a>
+            </div>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="font-medium hover:text-blue-100 transition-smooth">Home</a>
+            <a href="products.html" class="font-medium hover:text-blue-100 transition-smooth">Products</a>
+            <a href="" class="font-medium hover:text-blue-100 transition-smooth">About Us</a>
+            <a href="#" class="font-medium hover:text-blue-100 transition-smooth">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden">
+            <button class="text-white">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Add this below your nav and before your footer -->
+<section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 md:px-8">
+    <div class="grid md:grid-cols-2 gap-12">
+      <!-- Left Column -->
+      <div>
+        <h2 class="text-3xl font-bold text-blue-800 mb-6">Contact Information</h2>
+        <p class="mb-4"><i class="fas fa-map-marker-alt text-blue-500 mr-2"></i> 180 Tices Lane, Suite 104-A, East Brunswick NJ 08816</p>
+        <p class="mb-4"><i class="fas fa-phone-alt text-blue-500 mr-2"></i> <a href="tel:7328531940" class="text-blue-700 hover:underline">(732)-853-1940</a></p>
+        <p class="mb-4"><i class="fas fa-envelope text-blue-500 mr-2"></i> <a href="mailto:support@qcessentials.com" class="text-blue-700 hover:underline">support@qcessentials.com</a></p>
+        <p class="mb-4"><i class="fab fa-instagram text-blue-500 mr-2"></i> <a href="https://www.instagram.com/qcessentials" target="_blank" class="text-blue-700 hover:underline">@qcessentials</a></p>
+      </div>
+
+      <!-- Right Column (Contact Form) -->
+      <div>
+        <h2 class="text-3xl font-bold text-blue-800 mb-6">Send Us a Message</h2>
+        <form onsubmit="return validateForm()" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name *" class="border border-gray-300 px-4 py-2 rounded w-full" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name *" class="border border-gray-300 px-4 py-2 rounded w-full" required>
+          </div>
+          <input type="email" id="email" name="email" placeholder="Email *" class="border border-gray-300 px-4 py-2 rounded w-full" required>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" class="border border-gray-300 px-4 py-2 rounded w-full">
+          <textarea id="message" name="message" placeholder="Your Message" class="border border-gray-300 px-4 py-2 rounded w-full h-32"></textarea>
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div class="mt-16">
+      <iframe class="w-full h-96 rounded shadow-lg"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3033.586293512271!2d-74.4208919242488!3d40.44485895583101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3c78cfec0934d%3A0xb95a59755bd4c453!2s180%20Tices%20Ln%2C%20East%20Brunswick%2C%20NJ%2008816%2C%20USA!5e0!3m2!1sen!2sus!4v1716156322745!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+       <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">QCE</h3>
+                    <p class="text-gray-400 mb-4">Quantum Care Essentials - Your premier destination for high-caliber durable medical equipment.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/qcessentials/?igsh=MWRlOXJvbnBxNnJmYQ%3D%3D#" class="text-gray-400 hover:text-white transition-smooth"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Products</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="#faq" class="text-gray-400 hover:text-white transition-smooth">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Hours</h3>
+                    <ul class=" text-gray-400 hover:text-white transition-smooth">
+                          <li>Weekdays:</li>
+                          <li>10AM - 4PM</li>
+                          <br>
+                          <li>Weekends:</li>
+                          <li>Closed</li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-400"></i>
+                            <span class="text-gray-400">180 Tices Lane, Suite 104-A<br>East Brunswick NJ 08816</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3 text-blue-400"></i>
+                            <a href="tel:7328531940" class="text-gray-400">(732)-853-1940</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-400"></i>
+                            <a href="mailto:support@qcessentials.com" class="text-gray-400">support@qcessentials.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 mb-4 md:mb-0">© 2025 Quantum Care Essentials. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-smooth">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function () {
+      const mobileMenuButton = document.querySelector('.md\\:hidden button');
+      const mobileMenu = document.createElement('div');
+      mobileMenu.className = 'hidden fixed inset-0 bg-white z-50 flex flex-col items-center justify-center';
+      mobileMenu.innerHTML = `
+        <button class="absolute top-4 right-4 text-2xl text-gray-800">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="flex flex-col space-y-6 text-center">
+          <a href="#" class="text-xl font-medium hover:text-blue-600">Home</a>
+          <a href="#" class="text-xl font-medium hover:text-blue-600">Products</a>
+          <a href="#" class="text-xl font-medium hover:text-blue-600">About Us</a>
+          <a href="#" class="text-xl font-medium hover:text-blue-600">Contact</a>
+        </div>
+      `;
+      document.body.appendChild(mobileMenu);
+
+      mobileMenuButton.addEventListener('click', function () {
+        mobileMenu.classList.remove('hidden');
+      });
+
+      mobileMenu.querySelector('button').addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // Newsletter popup
+    document.addEventListener("DOMContentLoaded", () => {
+      if (!localStorage.getItem("qceNewsletterDismissed")) {
+        setTimeout(() => {
+          document.getElementById("newsletterModal").classList.remove("hidden");
+        }, 800);
+      }
+    });
+
+    function closeModal() {
+      if (document.getElementById("dontShowAgain").checked) {
+        localStorage.setItem("qceNewsletterDismissed", "true");
+      }
+      document.getElementById("newsletterModal").classList.add("hidden");
+    }
+
+    function submitNewsletter(event) {
+      event.preventDefault();
+      const email = document.getElementById("newsletterEmail").value;
+      alert("Thank you for subscribing, " + email + "!");
+      closeModal();
+    }
+
+    // Contact form validation
+    function validateForm() {
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
+
+      if (!firstName || !lastName || !email) {
+        alert('Please fill in all required fields: First Name, Last Name, and Email.');
+        return false;
+      }
+
+      alert("Thank you for your message!");
+      return true;
+    }
+  </script>
+
+  <!-- Newsletter Modal -->
+  <div id="newsletterModal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full relative p-6 md:flex">
+      <button onclick="closeModal()" class="absolute top-2 right-2 text-white bg-blue-700 rounded-full w-6 h-6 flex items-center justify-center">
+        &times;
+      </button>
+      <div class="md:w-2/3">
+        <h2 class="text-2xl font-bold mb-4">JOIN OUR LIST</h2>
+        <p class="text-gray-700 mb-6">to get news and alerts of promotions and more!</p>
+        <form onsubmit="submitNewsletter(event)" class="flex flex-col sm:flex-row items-center gap-4">
+          <input type="email" id="newsletterEmail" placeholder="Your email address" required class="w-full sm:w-auto flex-grow border border-gray-300 px-4 py-2 rounded">
+          <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">SUBMIT</button>
+        </form>
+        <label class="inline-flex items-center mt-4">
+          <input type="checkbox" id="dontShowAgain" class="mr-2">
+          <span class="text-sm text-gray-600">Don't show this popup again</span>
+        </label>
+      </div>
+      <div class="hidden md:block md:w-1/3">
+        <img src="https://i.imgur.com/WvS0GqV.png" alt="Chair" class="w-full h-auto rounded-md">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
