@@ -455,12 +455,16 @@
     <!-- Text Content -->
     <div class="md:w-2/3">
       <h2 class="text-2xl font-bold mb-4">JOIN OUR LIST</h2>
-      <p class="text-gray-700 mb-6">to get news and alerts of promotions and more!</p>
+      <p class="text-gray-700 mb-6">Get news and alerts by email or phone!</p>
 
-      <form onsubmit="submitNewsletter(event)" class="flex flex-col sm:flex-row items-center gap-4">
-        <input type="email" id="newsletterEmail" placeholder="Your email address" required class="w-full sm:w-auto flex-grow border border-gray-300 px-4 py-2 rounded">
-        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">SUBMIT</button>
-      </form>
+    <form onsubmit="submitNewsletter(event)" class="flex flex-col gap-4 sm:gap-2">
+    <div class="flex flex-col sm:flex-row gap-4 w-full">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" class="w-full sm:w-1/2 border border-gray-300 px-4 py-2 rounded">
+        <input type="tel" id="newsletterPhone" placeholder="Your phone number" class="w-full sm:w-1/2 border border-gray-300 px-4 py-2 rounded">
+    </div>
+    <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition w-full sm:w-auto self-center">SUBMIT</button>
+    </form>
+
 
       <label class="inline-flex items-center mt-4">
         <input type="checkbox" id="dontShowAgain" class="mr-2">
@@ -494,8 +498,18 @@
 
   function submitNewsletter(event) {
     event.preventDefault();
-    const email = document.getElementById("newsletterEmail").value;
-    alert("Thank you for subscribing, " + email + "!");
+
+    const email = document.getElementById("newsletterEmail").value.trim();
+    const phone = document.getElementById("newsletterPhone").value.trim();
+
+    if (!email && !phone) {
+      alert("Please enter either your email or phone number to subscribe.");
+      return;
+    }
+
+    // Optional: You can add more validation here if needed
+    alert("Thank you for subscribing!");
+
     closeModal();
   }
   
